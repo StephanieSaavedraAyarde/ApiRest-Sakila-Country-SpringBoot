@@ -1,4 +1,4 @@
-###
+### Invoke Servidor
 GET http://localhost:8080/
 Accept: application/json
 
@@ -6,21 +6,30 @@ Accept: application/json
 GET http://localhost:8080/profile
 Accept: application/json
 
-###
+### Get all data
 GET http://localhost:8080/country
 Accept: application/json
 
-###
-GET http://localhost:8080/pais/1
+### Get country by Id
+GET http://localhost:8080/country/110
 Accept: application/json
 
-###
+### Create new country
 POST http://localhost:8080/country
 Content-Type: application/json
 
 {
-    "title": "Tarea N",
-    "decription": "Descripcion",
-    "taskStatus": "COMPLETED"
-    "status": 1
+    "country": "Tefisita"
 }
+
+### Update Country
+PUT http://localhost:8080/country/110
+Content-Type: application/json
+
+{
+    "country": "Software"
+}
+
+### Delete Country
+DELETE http://localhost:8080/country/110
+Accept: application/json
