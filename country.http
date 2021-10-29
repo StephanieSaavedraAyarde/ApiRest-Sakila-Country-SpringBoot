@@ -23,11 +23,11 @@ Content-Type: application/json
 }
 
 ### Update Country
-PUT http://localhost:8080/country/110
+PUT http://localhost:8080/country/111
 Content-Type: application/json
 
 {
-    "country": "Software"
+    "country": "Software2"
 }
 
 ### Delete Country
